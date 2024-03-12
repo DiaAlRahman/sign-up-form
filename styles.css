@@ -10,6 +10,11 @@
   src: url(./karabinE_/karabine.ttf);
 }
 
+@font-face {
+  font-family: adam-cg;
+  src: url(./adam-cg-pro/ADAM.CG\ PRO.otf);
+}
+
 *,
 body,
 html{
@@ -41,6 +46,8 @@ div#sign-up-form{
 
   border-radius: 1rem;
   border: solid 2px var(--tertiary-color);
+
+  display: flex;
 }
 
 div#sidebar{
@@ -62,4 +69,12 @@ div#logo{
   font-size: 80px;
 
   margin-bottom: 100px;
+}
+
+.form-content h1{
+  font-family: adam-cg;
+  font-weight: 100;
+  font-size: 1rem;
+
+  padding: 10rem 0 0 2rem;
 }
