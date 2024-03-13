@@ -11,23 +11,52 @@
 <body>
 
   <div class="flex-container">
-    <div id="sign-up-form">
+    <div id="form">
       <div id="sidebar">
         <div id="logo">i<span style="font-size: 200px;">S</span>ketch</div>
       </div>
       <div class="form-content">
-        <h1>Let's get sketchy! Pun intended :)
-          <br>
-          <br>
-          Happy sketching - why don't you start with an apple!
-          <br>
-          Like you see in the background 😉
+        <h1>
+          why don't you start with an apple, Like you see in the background 😉!
           <br>
           Sign up <em>now</em> to get started!
         </h1>
-        <fieldset>
-          <legend>Get started: </legend>
-          <form action=""></form>
+        <fieldset class="sign-up-form">
+          <legend>Let's get sketchy: </legend>
+          <form action="">
+            <section class="left">
+              <div class="form-element">
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" name="first_name">
+              </div>
+
+              <div class="form-element">
+                <label for="user_mail">Email</label>
+                <input type="email" id="user_mail" name="user_mail">
+              </div>
+
+              <div class="form-element">
+                <label for="user_pass">Password</label>
+                <input type="password" id="user_pass" name="user_pass">
+              </div>
+            </section>
+            <section class="right">
+              <div class="form-element">
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="last_name">
+              </div>
+
+              <div class="form-element">
+                <label for="user_phone">Phone Number</label>
+                <input type="tel" id="user_phone" name="user_phone">
+              </div>
+
+              <div class="form-element">
+                <label for="c_user_pass">Confirm Password</label>
+                <input type="password" id="c_user_pass" name="c_user_pass">
+              </div>
+            </section>
+          </form>
         </fieldset>
       </div>
     </div>
