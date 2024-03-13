@@ -17,49 +17,58 @@
       </div>
       <div class="form-content">
         <h1>
-          why don't you start with an apple, Like you see in the background 😉!
+          Sketch an apple, Like you see in the background 😉!
           <br>
           Sign up <em>now</em> to get started!
         </h1>
         <fieldset class="sign-up-form">
           <legend>Let's get sketchy: </legend>
-          <form action="">
-            <section class="left">
-              <div class="form-element">
-                <label for="first_name">First Name</label>
-                <input type="text" id="first_name" name="first_name">
-              </div>
+          <form action="" class="signup">
+            <div class="sections">
+              <section class="left">
+                <div class="form-element">
+                  <label for="first_name">First Name <span aria-label="require">*</span></label>
+                  <input type="text" id="first_name" name="first_name" required>
+                </div>
+                <div class="form-element">
+                  <label for="user_mail">Email <span aria-label="require">*</span></label>
+                  <input type="email" id="user_mail" name="user_mail" required>
+                </div>
+                <div class="form-element">
+                  <label for="user_pass">Password <span aria-label="require">*</span></label>
+                  <input type="password" id="user_pass" name="user_pass" required>
+                </div>
+              </section>
+              <section class="right">
+                <div class="form-element">
+                  <label for="last_name">Last Name</label>
+                  <input type="text" id="last_name" name="last_name">
+                </div>
+                <div class="form-element">
+                  <label for="user_phone">Phone Number <span aria-label="require">*</span></label>
+                  <input type="tel" id="user_phone" name="user_phone" required>
+                </div>
+                <div class="form-element">
+                  <label for="c_user_pass">Confirm Password <span aria-label="require">*</span></label>
+                  <input type="password" id="c_user_pass" name="c_user_pass" required>
+                </div>
+              </section>
+            </div>
 
-              <div class="form-element">
-                <label for="user_mail">Email</label>
-                <input type="email" id="user_mail" name="user_mail">
-              </div>
-
-              <div class="form-element">
-                <label for="user_pass">Password</label>
-                <input type="password" id="user_pass" name="user_pass">
-              </div>
-            </section>
-            <section class="right">
-              <div class="form-element">
-                <label for="last_name">Last Name</label>
-                <input type="text" id="last_name" name="last_name">
-              </div>
-
-              <div class="form-element">
-                <label for="user_phone">Phone Number</label>
-                <input type="tel" id="user_phone" name="user_phone">
-              </div>
-
-              <div class="form-element">
-                <label for="c_user_pass">Confirm Password</label>
-                <input type="password" id="c_user_pass" name="c_user_pass">
-              </div>
-            </section>
+            <div class="form-element">
+              <input type="submit" value="Create Account" />
+            </div>
           </form>
+
+          <p class="redirect-login">
+            Already have an account?
+            <a href="./login.html">Log in</a>
+          </p>
         </fieldset>
       </div>
     </div>
+
+
   </div>
 </body>
 
