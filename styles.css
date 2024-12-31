@@ -192,3 +192,8 @@ p.redirect-login a{
   flex-direction: column;
   gap: 64px;
 }
+
+.hint{
+  position: absolute;
+  bottom: 10vh;
+}
